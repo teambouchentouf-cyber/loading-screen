@@ -24,9 +24,9 @@ body {
 /* Did You Know text */
 #didyouknow {
     position: fixed;
-    top: 50%;
+    bottom: 10vh;         /* keeps the text near the bottom */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);  /* only center horizontally */
     color: white;
     font-size: 2vw;
     text-shadow: 0 0 0.3vw black;
