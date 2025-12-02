@@ -22,7 +22,7 @@ body {
 }
 
 /* Ton image UI */
-#ui {
+#ui-frame {
     background-image: url('images/ui.png');  /* Remplace par le chemin de ton image */
     background-size: cover;  /* Couvre tout l'écran */
     background-position: center;  /* Centre l'image */
@@ -68,6 +68,7 @@ body {
     font-size: 18px;
     text-shadow: 0 0 5px black;
 }
+
 
 
 
