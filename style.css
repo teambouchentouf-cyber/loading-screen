@@ -26,7 +26,7 @@ body {
     position: fixed;
 
     /* FORCE it to the bottom */
-    bottom: 6vh !important;
+    bottom: 10vh !important;
     top: auto !important;
 
     left: 50%;
