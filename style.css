@@ -32,7 +32,6 @@ body {
     text-shadow: 0 0 0.3vw black;
     z-index: 2;
     text-align: center;
-    object-fit: contain;
     max-width: 90%;
     white-space: normal;      /* autorise le texte à aller à la ligne */
     overflow: visible;        /* pas de masquage avec des ... */
