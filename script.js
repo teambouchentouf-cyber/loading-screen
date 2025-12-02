@@ -13,14 +13,3 @@ setInterval(() => {
     document.getElementById("fact").textContent = facts[factIndex];
     factIndex = (factIndex + 1) % facts.length;
 }, 5000);
-
-// Barre de chargement (fake pour test)
-let percent = 0;
-let interval = setInterval(() => {
-    percent++;
-    if (percent > 100) percent = 100;
-
-    document.getElementById("loading-bar").style.width = percent + "%";
-    document.getElementById("percent").textContent = percent + "%";
-
-}, 80);
