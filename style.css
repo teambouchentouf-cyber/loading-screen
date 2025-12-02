@@ -33,9 +33,10 @@ body {
     z-index: 2;
     text-align: center;
     max-width: 90%;
-    white-space: normal;      /* autorise le texte à aller à la ligne */
-    overflow: visible;        /* pas de masquage avec des ... */
-    text-overflow: clip;      /* coupe le texte sans ajouter ... */
+    white-space: normal;   /* permet au texte de passer à la ligne */
+    overflow: visible;     /* pas de masquage */
+    text-overflow: clip;   /* coupe le texte sans ... */
+    display: inline-block; /* important pour que le texte ne tronque pas */
 }
 
 /* Ton image UI */
