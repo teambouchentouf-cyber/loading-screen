@@ -16,8 +16,11 @@ let factIndex = 0;
 
 // Change le texte toutes les 5 secondes
 setInterval(() => {
-    document.getElementById("fact").textContent = facts[factIndex];
+    const didYouKnow = document.getElementById("didyouknow");
+    didYouKnow.textContent = facts[factIndex];
     factIndex = (factIndex + 1) % facts.length;
 }, 5000);
 
+// Initialisation immédiate au chargement
+document.getElementById("didyouknow").textContent = facts[0];
 
