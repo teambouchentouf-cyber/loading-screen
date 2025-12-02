@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Georgia", serif;
+    color: white;
+}
+
+/* Images de fond */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    transition: background-image 1s ease;
+}
+
+/* Conteneur */
+.loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+
+/* Titre */
+.title {
+    font-size: 52px;
+    margin-bottom: 40px;
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 80%;
+    height: 18px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: #d2b48c;
+    border-radius: 10px;
+    transition: width 0.2s ease;
+}
+
+/* Pourcentage */
+.percent {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* Fun facts */
+.funfact-box {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.subtitle {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.funfact {
+    opacity: 0.8;
+}
