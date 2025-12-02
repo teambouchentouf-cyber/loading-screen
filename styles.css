@@ -1,94 +1,69 @@
-:root{
-  /* Ajuste ces valeurs pour aligner la UI sous ton overlay */
-  --ui-top: 70%;      /* hauteur (en % de l'écran) du conteneur UI */
-  --ui-left: 25%;     /* distance du côté gauche du conteneur UI */
-  --ui-scale: 1;      /* échelle globale (1 = normal) */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial;
 }
 
-/* Reset */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;}
-
-/* Fond (images qui défilent) */
-#bg{
-  position:fixed;
-  inset:0;
-  background-size:cover;
-  background-position:center;
-  filter:brightness(0.35);
-  transition:background-image 1s ease-in-out;
-  z-index:0;
+/* Slideshow */
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 18s infinite;
 }
 
-/* Overlay (ton image transparente placée au dessus du bg) */
-#overlay{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) scale(var(--ui-scale));
-  width:90vw;            /* modifie si trop grand/petit */
-  max-width:1600px;
-  pointer-events:none;   /* clique passe à travers */
-  z-index:2;
+@keyframes slide {
+    0% { background-image: url("images/bg1.jpg"); }
+    33% { background-image: url("images/bg2.jpg"); }
+    66% { background-image: url("images/bg3.jpg"); }
+    100% { background-image: url("images/bg1.jpg"); }
 }
 
-/* Conteneur UI qui contient la barre + pourcentage + funfact.
-   On le place en absolute au-dessus du fond et sous l'overlay visuellement (z-index supérieur). */
-#ui{
-  position:fixed;
-  top:var(--ui-top);
-  left:var(--ui-left);
-  transform:translate(-50%, -50%) scale(var(--ui-scale));
-  z-index:3;
-  color:#fff;
-  width:50%; /* largeur du conteneur : ajuste si besoin */
-  text-align:left;
-  font-family: "Georgia", serif;
-  pointer-events:auto;
+/* Ton image UI */
+#ui-frame {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* empêche interactions */
 }
 
-/* Barre */
-.progress-wrapper{
-  display:flex;
-  align-items:center;
-  gap:12px;
+/* Barre de chargement */
+#loading-bar-container {
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
 }
 
-.progress-bar{
-  flex:1;
-  height:16px;
-  background: rgba(80,60,40,0.6); /* marron sombre sous-barre */
-  border-radius:10px;
-  overflow:hidden;
+#loading-bar {
+    height: 100%;
+    width: 0%;
+    background: #d8c7a8;
+    border-radius: 10px;
+    transition: width 0.3s;
 }
 
-#progress{
-  height:100%;
-  width:0%;
-  background:#d6c2a1; /* beige clair */
-  transition:width 0.12s linear;
+#percent {
+    position: fixed;
+    bottom: 155px;
+    left: calc(50% + 31%);
+    color: white;
+    font-weight: bold;
 }
 
-/* Pourcentage (à droite de la barre) */
-#percent{
-  min-width:48px;
-  text-align:right;
-  font-size:18px;
-  font-weight:600;
-  color:#fff;
-}
-
-/* Funfact text */
-.funfact-wrapper{
-  margin-top:18px;
-  font-size:20px;
-  color:#efefef;
-  text-shadow:0 1px 0 rgba(0,0,0,0.6);
-}
-
-.prefix{
-  font-weight:700;
-  margin-bottom:6px;
-  display:block;
-  font-size:22px;
+/* Did you know text */
+#didyouknow {
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    text-shadow: 0 0 5px black;
 }
