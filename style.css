@@ -21,37 +21,6 @@ body {
     100% { background-image: url("images/bg1.jpg"); }
 }
 
-/* Barre de chargement */
-#loading-bar-container {
-    position: fixed;
-    bottom: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 20px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
-    z-index: 2; /* au-dessus du fond */
-}
-
-#loading-bar {
-    height: 100%;
-    width: 0%;
-    background: #d8c7a8;
-    border-radius: 10px;
-    transition: width 0.3s;
-    z-index: 2; /* au-dessus du fond */
-}
-
-#percent {
-    position: fixed;
-    bottom: 155px;
-    left: calc(50% + 31%);
-    color: white;
-    font-weight: bold;
-    z-index: 2; /* au-dessus du fond */
-}
-
 /* Did you know text */
 #didyouknow {
     position: fixed;
