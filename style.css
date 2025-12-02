@@ -27,7 +27,7 @@ body {
 
     /* FORCE it to the bottom */
     bottom: 7vh !important;
-    top: 7vh !important;
+    top: auto !important;
 
     left: 50%;
     transform: translateX(-50%) !important;
