@@ -14,9 +14,10 @@ const facts = [
 
 let factIndex = 0;
 
-// Change le texte toutes les 15 secondes
+// Change le texte toutes les 5 secondes
 setInterval(() => {
     document.getElementById("fact").textContent = facts[factIndex];
     factIndex = (factIndex + 1) % facts.length;
-}, 15000);
+}, 5000);
+
 
