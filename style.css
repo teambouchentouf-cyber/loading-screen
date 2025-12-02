@@ -33,6 +33,7 @@ body {
     z-index: 2;             /* au-dessus du fond */
     text-align: center;
     max-width: 90%;         /* prevent overflow on small screens */
+    object-fit: contain;
 }
 
 /* Ton image UI */
