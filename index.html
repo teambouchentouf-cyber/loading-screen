@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <title>Loading - Le BouchenRP</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Fond qui change -->
-    <div id="bg"></div>
+    <!-- Fond avec slideshow -->
+    <div id="background"></div>
 
-    <!-- Overlay (ton image transparente avec le texte "Est-ce que tu savais que?" etc) -->
-    <img id="overlay" src="images/overlay.png" alt="overlay" />
+    <!-- L'image UI au-dessus -->
+    <img id="ui-frame" src="images/ui.png">
 
-    <!-- Éléments dynamiques (barre + pourcentage + funfact).
-         On les place ici pour pouvoir ajuster leur position relative à l'overlay via CSS variables. -->
-    <div id="ui">
-        <div class="progress-wrapper">
-            <div class="progress-bar"><div id="progress"></div></div>
-            <div id="percent">0%</div>
-        </div>
-
-        <div class="funfact-wrapper">
-            <div class="prefix">Est-ce que tu savais que :</div>
-            <div id="funfact">Chargement...</div>
-        </div>
+    <!-- Barre de chargement -->
+    <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+        <span id="percent">0%</span>
     </div>
 
-<script src="script.js"></script>
+    <!-- Texte "Est-ce que tu savais que ?" -->
+    <div id="didyouknow">
+        <b>Est-ce que tu savais que :</b>
+        <span id="fact"></span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
