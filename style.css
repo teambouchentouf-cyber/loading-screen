@@ -24,13 +24,15 @@ body {
 /* Did you know text */
 #didyouknow {
     position: fixed;
-    bottom: 120px;
+    bottom: 10vh;           /* 10% of viewport height from bottom */
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 18px;
-    text-shadow: 0 0 5px black;
-    z-index: 2; /* au-dessus du fond */
+    font-size: 2vw;         /* scales with viewport width */
+    text-shadow: 0 0 0.3vw black;  /* scales with viewport width */
+    z-index: 2;             /* au-dessus du fond */
+    text-align: center;
+    max-width: 90%;         /* prevent overflow on small screens */
 }
 
 /* Ton image UI */
