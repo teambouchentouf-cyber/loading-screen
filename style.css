@@ -26,8 +26,8 @@ body {
     position: fixed;
 
     /* FORCE it to the bottom */
-    bottom: 10vh !important;
-    top: auto !important;
+    bottom: 1vh !important;
+    top: 90vh !important;
 
     left: 50%;
     transform: translateX(-50%) !important;
