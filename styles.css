@@ -24,9 +24,12 @@ body {
 /* Ton image UI */
 #ui-frame {
     position: fixed;
-    width: 100%;
-    height: auto;
-    pointer-events: none; /* empêche interactions */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill; /* couvre tout l'écran */
+    pointer-events: none;
 }
 
 /* Barre de chargement */
@@ -67,3 +70,4 @@ body {
     font-size: 18px;
     text-shadow: 0 0 5px black;
 }
+
