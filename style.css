@@ -69,5 +69,5 @@ body {
     height: 100vh;  /* taille écran */
     object-fit: contain; 
     pointer-events: none; /* clics passent au travers */
-    z-index: 10; /* au-dessus du fond */
+    z-index: 0.1; /* au-dessus du fond */
 }
