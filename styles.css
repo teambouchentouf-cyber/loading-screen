@@ -26,10 +26,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill; /* couvre tout l'écran */
-    pointer-events: none;
+    width: 100vw;   /* taille écran */
+    height: 100vh;  /* taille écran */
+    object-fit: contain; 
+    pointer-events: none; /* clics passent au travers */
+    z-index: 10; /* au-dessus du fond */
 }
 
 /* Barre de chargement */
@@ -70,4 +71,5 @@ body {
     font-size: 18px;
     text-shadow: 0 0 5px black;
 }
+
 
