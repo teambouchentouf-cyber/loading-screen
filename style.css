@@ -31,6 +31,7 @@ body {
     height: 20px;
     background: rgba(255,255,255,0.2);
     border-radius: 10px;
+    z-index: 2; /* au-dessus du fond */
 }
 
 #loading-bar {
@@ -39,6 +40,7 @@ body {
     background: #d8c7a8;
     border-radius: 10px;
     transition: width 0.3s;
+    z-index: 2; /* au-dessus du fond */
 }
 
 #percent {
@@ -47,6 +49,7 @@ body {
     left: calc(50% + 31%);
     color: white;
     font-weight: bold;
+    z-index: 2; /* au-dessus du fond */
 }
 
 /* Did you know text */
@@ -58,6 +61,7 @@ body {
     color: white;
     font-size: 18px;
     text-shadow: 0 0 5px black;
+    z-index: 2; /* au-dessus du fond */
 }
 
 /* Ton image UI */
@@ -69,5 +73,5 @@ body {
     height: 100vh;  /* taille écran */
     object-fit: contain; 
     pointer-events: none; /* clics passent au travers */
-    z-index: 0.1; /* au-dessus du fond */
+    z-index: 1; /* au-dessus du fond */
 }
