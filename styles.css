@@ -22,7 +22,7 @@ body {
 }
 
 /* Ton image UI */
-body {
+#ui {
     background-image: url('images/ui.png');  /* Remplace par le chemin de ton image */
     background-size: cover;  /* Couvre tout l'écran */
     background-position: center;  /* Centre l'image */
