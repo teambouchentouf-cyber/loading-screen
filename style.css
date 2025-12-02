@@ -24,16 +24,19 @@ body {
 /* Did you know text */
 #didyouknow {
     position: fixed;
-    bottom: 10vh;           /* 10% of viewport height from bottom */
+    bottom: 10vh;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 2vw;         /* scales with viewport width */
-    text-shadow: 0 0 0.3vw black;  /* scales with viewport width */
-    z-index: 2;             /* au-dessus du fond */
+    font-size: 2vw;
+    text-shadow: 0 0 0.3vw black;
+    z-index: 2;
     text-align: center;
-    max-width: 90%;         /* prevent overflow on small screens */
     object-fit: contain;
+    max-width: 90%;
+    white-space: normal;      /* autorise le texte à aller à la ligne */
+    overflow: visible;        /* pas de masquage avec des ... */
+    text-overflow: clip;      /* coupe le texte sans ajouter ... */
 }
 
 /* Ton image UI */
