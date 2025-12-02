@@ -21,18 +21,6 @@ body {
     100% { background-image: url("images/bg1.jpg"); }
 }
 
-/* Ton image UI */
-#ui-frame {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;   /* taille écran */
-    height: 100vh;  /* taille écran */
-    object-fit: contain; 
-    pointer-events: none; /* clics passent au travers */
-    z-index: 10; /* au-dessus du fond */
-}
-
 /* Barre de chargement */
 #loading-bar-container {
     position: fixed;
@@ -70,4 +58,16 @@ body {
     color: white;
     font-size: 18px;
     text-shadow: 0 0 5px black;
+}
+
+/* Ton image UI */
+#ui-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;   /* taille écran */
+    height: 100vh;  /* taille écran */
+    object-fit: contain; 
+    pointer-events: none; /* clics passent au travers */
+    z-index: 10; /* au-dessus du fond */
 }
