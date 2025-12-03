@@ -1,8 +1,8 @@
 // --- Liste des images du slideshow ---
 const backgrounds = [
-    "images/bg1.jpg",
-    "images/bg2.jpg",
-    "images/bg3.jpg"
+    "images/bg1.png",
+    "images/bg2.png",
+    "images/bg3.png"
 ];
 
 // --- Liste des textes Did You Know ---
@@ -55,3 +55,4 @@ step();
 
 // --- Change tout toutes les 5 secondes ---
 setInterval(step, 5000);
+
