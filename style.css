@@ -4,21 +4,20 @@ body {
     font-family: Arial;
 }
 
-/* Slideshow */
+/* Slideshow géré par JS (remplace @keyframes slide) */
 #background {
     position: fixed;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    animation: slide 18s infinite;
+    transition: opacity 0.8s ease, background-image 0.6s ease;
+    opacity: 1;
 }
 
-@keyframes slide {
-    0% { background-image: url("images/bg1.jpg"); }
-    33% { background-image: url("images/bg2.jpg"); }
-    66% { background-image: url("images/bg3.jpg"); }
-    100% { background-image: url("images/bg1.jpg"); }
+/* Pour l'effet de cross-fade on utilisera un pseudo-bg secondaire */
+#background.fade-out {
+    opacity: 0;
 }
 
 /* Did You Know text */
